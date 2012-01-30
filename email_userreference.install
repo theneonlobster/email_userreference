@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Implementation of hook_install().
+ */
+function email_userreference_install() {
+  drupal_load('module', 'content');
+  content_notify('install', 'email_userreference');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function email_userreference_uninstall() {
+  drupal_load('module', 'content');
+  content_notify('uninstall', 'email_userreference');
+}
+
+/**
+ * Implementation of hook_enable().
+ *
+ * Notify content module when this module is enabled.
+ */
+function email_userreference_enable() {
+  drupal_load('module', 'content');
+  content_notify('enable', 'email_userreference');
+}
+
+/**
+ * Implementation of hook_disable().
+ *
+ * Notify content module when this module is disabled.
+ */
+function email_userreference_disable() {
+  drupal_load('module', 'content');
+  content_notify('disable', 'email_userreference');
+}

@@ -1,0 +1,6 @@
+name = Email Userreference
+description = Adds an additional widget to the CCK Userreference field that searches for Email Addresses for autocompletion and displays them.
+dependencies[] = userreference
+package = CCK
+core = 6.x
+php = 5.0
